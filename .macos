@@ -16,6 +16,12 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General UI/UX                                                               #
 ###############################################################################
 
+# Set computer name (as done via System Preferences → Sharing)
+sudo scutil --set ComputerName "Bojan's Macbook Pro"
+sudo scutil --set HostName "mbp"
+sudo scutil --set LocalHostName "mbp"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "mbp"
+
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
@@ -229,7 +235,7 @@ tell application "Terminal"
 	local allOpenedWindows
 	local initialOpenedWindows
 	local windowID
-	set themeName to "Solarized Dark xterm-256color"
+	set themeName to "Dracula"
 
 	(* Store the IDs of all the open terminal windows. *)
 	set initialOpenedWindows to id of every window
