@@ -1,0 +1,21 @@
+# brew list
+gdbm
+libevent
+mas
+openssl
+pcre
+tmux
+zsh
+zsh-completions
+
+# brew cask list
+1password
+google-chrome
+spectacle
+spotify
+sublime-text
+
+# mas list
+937984704 Amphetamine (3.0.2)
+497799835 Xcode (8.3.2)
+
