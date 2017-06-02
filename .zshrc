@@ -83,4 +83,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+SCRIPTS="~/VersionControl/scripts"
+alias apps="eval ${SCRIPTS}/apps.sh"
+alias genmodule="eval ${SCRIPTS}/genmodule.swift"
+alias pbclear="eval ${SCRIPTS}/pbclear.sh"
 

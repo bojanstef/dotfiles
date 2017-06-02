@@ -41,6 +41,12 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow AdminHostInfo Hos
 # Use dark menu bar and dock
 defaults write NSGlobalDomain AppleInterfaceStyle Dark
 
+# Use 24 hour clock 
+defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
+
+# Show battery percentage
+defaults write com.apple.menuextra.battery ShowPercent -bool true
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
