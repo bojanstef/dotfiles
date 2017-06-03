@@ -47,6 +47,9 @@ defaults write NSGlobalDomain AppleICUForce24HourTime -bool true
 # Show battery percentage
 defaults write com.apple.menuextra.battery ShowPercent -bool true
 
+# Hide menubar automatically 
+defaults write NSGlobalDomain _HIHideMenuBar -bool true
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
@@ -115,6 +118,12 @@ sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutio
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
+
+# I don't wanna see anything on my desktop
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool false
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool false
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 
 # Set Desktop as the default location for new Finder windows
 # For other paths, use `PfLo` and `file:///full/path/here/`
