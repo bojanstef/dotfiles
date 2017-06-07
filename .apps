@@ -1,22 +1,40 @@
 # brew list
+adns
+freetype
 gdbm
 gettext
 gmp
+gnupg
+gnutls
 httpie
+i2p
+imagemagick
+jpeg
+libassuan
 libevent
 libffi
+libgcrypt
 libgpg-error
+libksba
+libpng
 libtasn1
+libtiff
+libtool
 libunistring
+libusb
 mas
 mpw
+neofetch
 nettle
 nmap
+npth
 openssl
 p11-kit
 pcre
+pinentry
 python3
 readline
+screenresolution
 sqlite
 tmux
 xz
@@ -27,11 +45,15 @@ zsh-completions
 1password
 google-chrome
 iterm2
+java
 spectacle
 spotify
 sublime-text
+torbrowser
+virtualbox
 vlc
 wireshark
+zeronet
 
 # mas list
 937984704 Amphetamine (3.0.2)
