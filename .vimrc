@@ -1,10 +1,24 @@
+" Make Vim more useful
+set nocompatible
+filetype off                  " Vundle required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+Bundle 'darfink/vim-plist'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " Vundle required
+filetype plugin indent on    " Vundle required
+
 " Use the dracula theme
 set background=dark
 colorscheme dracula
 let g:solarized_termtrans=1
 
-" Make Vim more useful
-set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
 set clipboard=unnamed
 " Enhance command-line completion
@@ -67,6 +81,8 @@ set noerrorbells
 set nostartofline
 " Show the cursor position
 set ruler
+" Don't allow code folding
+set nofoldenable
 " Don’t show the intro message when starting Vim
 set shortmess=atI
 " Show the current mode
