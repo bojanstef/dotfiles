@@ -1,11 +1,13 @@
 # brew list
 adns
+bash
 freetype
 gdbm
 gettext
 gmp
 gnupg
 gnutls
+htop
 httpie
 i2p
 imagemagick
@@ -32,6 +34,7 @@ openssl
 p11-kit
 pcre
 pinentry
+pipes-sh
 python3
 readline
 screenresolution
@@ -56,6 +59,5 @@ wireshark
 zeronet
 
 # mas list
-937984704 Amphetamine (3.0.2)
-497799835 Xcode (8.3.2)
+No installed apps found
 
