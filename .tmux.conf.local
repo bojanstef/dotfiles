@@ -285,11 +285,6 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g status-keys vi
 #set -g mode-keys vi
 
-# Horizontal and vertical split
-# Prevent escape character confusion with `\\`
-bind \\ split-window -h
-bind - split-window -v
-
 # replace C-b by C-space instead of using both prefixes
 set -gu prefix2
 unbind C-a
@@ -297,6 +292,14 @@ unbind C-b
 unbind C-space
 set -g prefix C-space
 bind C-space send-prefix
+
+# Horizontal and vertical split
+# Prevent escape character confusion with `\\`
+bind \\ split-window -h
+bind - split-window -v
+
+# Setup from https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+set-option -g default-command "reattach-to-user-namespace -l zsh"
 
 # move status line to top
 #set -g status-position top
