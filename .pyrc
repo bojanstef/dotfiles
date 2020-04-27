@@ -1,0 +1,15 @@
+# https://virtualenvwrapper.readthedocs.io/en/latest/install.html#shell-startup-file
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Source/.pyenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+
+# https://github.com/direnv/direnv/wiki/Python#zsh
+show_virtual_env() {
+  if [[ -n "$VIRTUAL_ENV" && -n "$DIRENV_DIR" ]]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+
+PS1='$(show_virtual_env)'$PS1

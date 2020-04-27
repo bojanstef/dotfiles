@@ -303,3 +303,4 @@ set-option -g default-command "reattach-to-user-namespace -l zsh"
 
 # move status line to top
 #set -g status-position top
+

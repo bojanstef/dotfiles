@@ -45,8 +45,15 @@ source $ZSH/oh-my-zsh.sh
 # To use other executables in zsh 
 source /usr/local/etc/bash_completion.d
 
+# If you added the previous alias, use a text editor to update the line to the following
+alias python=/usr/local/bin/python3
+alias pip=/usr/local/bin/pip3
+
 # Delete derived data
 alias ddd="rm -rf ~/Library/Developer/Xcode/DerivedData"
+
+# Python setup
+source $HOME/.pyrc
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
