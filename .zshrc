@@ -55,6 +55,9 @@ alias ddd="rm -rf ~/Library/Developer/Xcode/DerivedData"
 # Python setup
 source $HOME/.pyrc
 
+# https://direnv.net/docs/hook.html#zsh
+eval "$(direnv hook zsh)"
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
