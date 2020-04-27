@@ -286,7 +286,8 @@ tmux_conf_copy_to_os_clipboard=false
 #set -g mode-keys vi
 
 # Horizontal and vertical split
-bind \ split-window -h
+# Prevent escape character confusion with `\\`
+bind \\ split-window -h
 bind - split-window -v
 
 # replace C-b by C-space instead of using both prefixes
