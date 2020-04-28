@@ -45,11 +45,8 @@ source $ZSH/oh-my-zsh.sh
 # To use other executables in zsh 
 source /usr/local/etc/bash_completion.d
 
-# If you added the previous alias, use a text editor to update the line to the following
+# Alias python to the brew installed python 3
 alias python=/usr/local/bin/python3
-
-# Should I use a pip alias?
-# alias pip=/usr/local/bin/pip3
 
 # Delete derived data
 alias ddd="rm -rf ~/Library/Developer/Xcode/DerivedData"
